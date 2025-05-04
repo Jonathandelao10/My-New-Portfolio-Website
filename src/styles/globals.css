@@ -1,0 +1,67 @@
+
+html, body {
+  height: 100%;
+  margin: 0;
+  background: transparent !important;
+  /* overflow: hidden; */ /* Removed to ensure particles are visible */
+}
+
+#root {
+  height: 100%;
+  background: transparent;
+}
+
+#tsparticles {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* Base styling */
+@layer base {
+  body {
+    @apply font-sans bg-white text-black;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-bold text-black;
+  }
+
+  a {
+    @apply no-underline text-inherit;
+  }
+}
+
+/* Custom component styles */
+@layer components {
+  .maroon-underline {
+    @apply relative;
+
+    &::after {
+      @apply content-[''] absolute bottom-[-3px] left-0 w-full h-0.5 bg-maroon scale-x-0 transition-transform duration-300;
+    }
+
+    &:hover::after {
+      @apply scale-x-100;
+    }
+  }
+
+  .section-heading {
+    @apply text-3xl md:text-4xl font-bold text-center mb-12 relative;
+
+    &::after {
+      @apply content-[''] absolute bottom-[-10px] left-1/2 w-24 h-0.5 bg-maroon -translate-x-1/2;
+    }
+  }
+}
+
+/* Custom color classes */
+.text-maroon {
+  color: #8B0000;
+}
+
+.bg-maroon {
+  background-color: #8B0000;
+}
