@@ -5,10 +5,10 @@ import { projects } from '../data/projects';
 
 export default function Projects() {
   return (
-    <section id="projects" className="bg-stone-100 text-white  py-20 px-4">
+    <section id="projects" className="bg-stone-900 text-white py-20 px-4">
       {/* Heading */}
       <div className="max-w-6xl mx-auto text-center mb-12">
-        <h2 className="text-3xl md:text-4xl font-bold inline-block text-black">
+        <h2 className="text-3xl md:text-4xl font-bold inline-block text-white">
           PROJECTS
         </h2>
         <div className="w-20 h-0.5 bg-red-800 mx-auto mt-2" />
@@ -20,19 +20,23 @@ export default function Projects() {
           <div
             key={p.id}
             className="
-              relative bg-stone-800 rounded-xl overflow-hidden
-              shadow-lg transform transition
+              relative
+              bg-white                 /* white card background */
+              rounded-xl
+              overflow-hidden
+              shadow-lg
+              transform transition
               hover:-translate-y-1 hover:shadow-2xl
             "
           >
-            {/* link icon */}
+            {/* external link icon */}
             <a
               href={p.link}
               target="_blank"
               rel="noopener noreferrer"
               className="
                 absolute top-3 right-3
-                text-gray-600 hover:text-gray-900
+                text-stone-900 hover:text-stone-700
                 transition-colors
               "
             >
@@ -46,9 +50,11 @@ export default function Projects() {
               className="w-full h-48 object-cover"
             />
 
-            {/* content */}
+            {/* card content */}
             <div className="p-6 space-y-4">
-              <h3 className="text-2xl font-bold">{p.title}</h3>
+              <h3 className="text-2xl font-bold text-stone-900">
+                {p.title}
+              </h3>
 
               {/* tech badges */}
               <div className="flex flex-wrap gap-2">
@@ -66,7 +72,9 @@ export default function Projects() {
                 ))}
               </div>
 
-              <p className="text-gray-100">{p.description}</p>
+              <p className="text-stone-800">
+                {p.description}
+              </p>
             </div>
           </div>
         ))}

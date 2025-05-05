@@ -9,6 +9,7 @@ import Projects          from './components/Projects';
 import Contact           from './components/Contact';
 import ParticlesComponent from './components/Particles';
 import Awards from './components/Awards';
+import Experience from './components/Experience';
 
 export default function App() {
   return (
@@ -27,6 +28,7 @@ export default function App() {
         <About />
         <Skills />
         <Education />
+        <Experience />
         <Projects />
         <Awards/>
         <Contact />
