@@ -21,7 +21,7 @@ export default function Navbar() {
         </div>
 
         <div className="hidden md:flex space-x-10 ">
-          {['home', 'about', 'skills', 'education', 'projects', 'contact'].map(sec => (
+          {['home', 'about', 'skills', 'education', 'projects', 'awards','contact'].map(sec => (
             <Link
               key={sec}
               to={sec}

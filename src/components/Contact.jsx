@@ -42,7 +42,7 @@ export default function Contact() {
         <div className="flex flex-col items-center text-center px-8 md:border-l md:border-r border-maroon space-y-4">
           <h3 className="text-xl font-semibold mb-4">Quick Links</h3>
           <div className="flex flex-wrap justify-center gap-4">
-            {['home','about','skills','education','projects','contact'].map(sec => (
+            {['home','about','skills','education','projects','awards','contact'].map(sec => (
               <ScrollLink
                 key={sec}
                 to={sec}
