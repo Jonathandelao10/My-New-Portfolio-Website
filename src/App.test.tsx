@@ -1,9 +1,0 @@
-// App.test.tsx
-import React from 'react';
-import { render, screen } from '@testing-library/react';
-import App from './App'; // Remove .jsx extension
-
-test('renders learn react link', () => {
-  render(<App />);
-  // Add your test assertions here
-});
