@@ -1,60 +1,62 @@
 // src/components/Awards.jsx
 import React from 'react';
 import { awards } from '../data/awards';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { Autoplay, FreeMode } from 'swiper/modules';
-
-import 'swiper/css';
-import 'swiper/css/autoplay';
 
 export default function Awards() {
+  // divide awards into 3 roughly equal chunks
+  const chunkSize = Math.ceil(awards.length / 3);
+  const rows = [
+    awards.slice(0, chunkSize),
+    awards.slice(chunkSize, chunkSize * 2),
+    awards.slice(chunkSize * 2),
+  ];
+
   return (
     <section id="awards" className="bg-stone-900 text-white py-20 px-4">
       {/* Heading */}
       <div className="max-w-6xl mx-auto text-center mb-12">
         <h2 className="text-3xl md:text-4xl font-bold inline-block">
-          AWARDS
+          AWARDS & CERTIFICATES
         </h2>
-        <div className="w-24 h-1 bg-red-800 mx-auto mt-2" />
+        <div className="w-44 h-1 bg-red-800 mx-auto mt-2" />
       </div>
 
-      {/* Carousel */}
-      <div className="max-w-6xl mx-auto">
-        <Swiper
-          modules={[Autoplay, FreeMode]}
-          spaceBetween={40}
-          slidesPerView="auto"
-          loop={true}
-          freeMode={true}
-          autoplay={{
-            delay: 1,                  // tiny non-zero so it moves
-            disableOnInteraction: false,
-            pauseOnMouseEnter: true,
-          }}
-          speed={5000}
-          className="py-4"
-        >
-          {awards.map((award) => (
-            <SwiperSlide
-              key={award.id}
-              style={{ width: '320px' }} // make each slide wider
-              className="flex flex-col items-center"
-            >
-              <img
-                src={award.img}
-                alt={award.title}
-                className="
-                  w-64 h-56            /* 14rem = 224px square */
-                  object-cover
-                  rounded-lg           /* soft square corners */
-                  border-4 border-white-300
-                  mb-4
-                "
-              />
-              <p className="text-center">{award.title}</p>
-            </SwiperSlide>
-          ))}
-        </Swiper>
+      {/* Three marquee rows */}
+      <div className="max-w-6xl mx-auto space-y-8">
+        {rows.map((rowAwards, rowIndex) => {
+          // pick direction: even-indexed rows scroll forward, odd rows backward
+          const className = rowIndex % 2 === 1 ? 'marquee-reverse' : 'marquee';
+
+          // duplicate so it never runs out
+          const marqueeItems = [...rowAwards, ...rowAwards];
+
+          return (
+            <div key={rowIndex} className="marquee-container">
+              <div className={className}>
+                {marqueeItems.map((award, i) => (
+                  <div
+                    key={`row${rowIndex}-item${i}`}
+                    className="flex-shrink-0 flex flex-col items-center text-center"
+                    style={{ width: '280px' }}
+                  >
+                    <img
+                      src={award.img}
+                      alt={award.title}
+                      className="
+                        w-132 h-56
+                        object-cover
+                        rounded-lg
+                        border-4 border-red-800
+                        mb-2
+                      "
+                    />
+                    <p className="font-semibold">{award.title}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+          );
+        })}
       </div>
     </section>
   );
