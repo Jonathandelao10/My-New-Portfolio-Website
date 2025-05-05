@@ -1,45 +1,84 @@
-// ✅ Contact.jsx
+// src/components/Contact.jsx
 import React from 'react';
+import { Link as ScrollLink } from 'react-scroll';
+import {
+  FaEnvelope,
+  FaPhoneAlt,
+  FaMapMarkerAlt,
+  FaLinkedin,
+  FaGithub,
+  FaInstagram,
+} from 'react-icons/fa';
 
-const Contact = () => {
+export default function Contact() {
   return (
-    <section id="contact" className="bg-black text-white py-20 px-4">
-      <div className="max-w-6xl mx-auto">
-        <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">CONTACT ME</h2>
-        <div className="flex flex-col md:flex-row justify-between">
-          <div>
-            <h3 className="text-xl font-semibold mb-4">Contact Me</h3>
-            <p className="mb-2">📧 jddelao@asu.edu</p>
-            <p className="mb-2">📞 +1 (316) XXX-XXX</p>
-            <p className="mb-6">📍 Tempe, Arizona</p>
+    <section id="contact" className="bg-stone-900 text-white py-20 px-4">
+      {/* Section title */}
+      <div className="max-w-6xl mx-auto text-center mb-12">
+        <h2 className="text-3xl font-bold inline-block">CONTACT ME</h2>
+        <div className="w-24 h-1 bg-maroon mx-auto mt-2" />
+      </div>
+
+      {/* Grid: 3 equal columns */}
+      <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-16 items-start">
+        {/* Col 1 */}
+        <div className="flex flex-col items-center space-y-4">
+          <h3 className="text-xl font-semibold">Contact Me</h3>
+          <div className="flex items-center space-x-3">
+            <FaEnvelope className="text-maroon text-2xl" />
+            <span>jddelao@asu.edu</span>
           </div>
-          <div>
-            <h3 className="text-xl font-semibold mb-4">Quick Links</h3>
-            <div className="space-y-2">
-              <p>Home</p>
-              <p>About</p>
-              <p>Skills</p>
-              <p>Education</p>
-              <p>Projects</p>
-              <p>Contact</p>
-            </div>
+          <div className="flex items-center space-x-3">
+            <FaPhoneAlt className="text-maroon text-2xl" />
+            <span>+1 (316) XXX-XXX</span>
           </div>
-          <div>
-            <h3 className="text-xl font-semibold mb-4">Jonathan's Portfolio</h3>
-            <p className="mb-4">
-              Thank you for visiting my personal portfolio website. Please, feel free to connect
-              with me over socials.
-            </p>
-            <div className="flex space-x-4">
-              <img src="/linkedin.png" alt="LinkedIn" className="h-8" />
-              <img src="/github.png" alt="GitHub" className="h-8" />
-              <img src="/instagram.png" alt="Instagram" className="h-8" />
-            </div>
+          <div className="flex items-center space-x-3">
+            <FaMapMarkerAlt className="text-maroon text-2xl" />
+            <span>Tempe, Arizona</span>
+          </div>
+        </div>
+
+        {/* Col 2 with separators */}
+        <div className="flex flex-col items-center text-center px-8 md:border-l md:border-r border-maroon space-y-4">
+          <h3 className="text-xl font-semibold mb-4">Quick Links</h3>
+          <div className="flex flex-wrap justify-center gap-4">
+            {['home','about','skills','education','projects','contact'].map(sec => (
+              <ScrollLink
+                key={sec}
+                to={sec}
+                spy
+                smooth
+                duration={500}
+                className="text-white font-bold uppercase cursor-pointer hover:text-maroon transition-colors"
+              >
+                {sec.toUpperCase()}
+              </ScrollLink>
+            ))}
+          </div>
+        </div>
+
+        {/* Col 3 */}
+        <div className="flex flex-col items-center space-y-4">
+          <h3 className="text-xl font-semibold">Jonathan’s Portfolio</h3>
+          <p className="max-w-sm">
+            Thank you for visiting my personal portfolio website. Feel free to connect with me on socials.
+          </p>
+          <div className="flex space-x-6 mt-2">
+            <a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noopener noreferrer"
+               className="text-maroon text-3xl hover:text-white transition-colors">
+              <FaLinkedin />
+            </a>
+            <a href="https://github.com/yourprofile" target="_blank" rel="noopener noreferrer"
+               className="text-maroon text-3xl hover:text-white transition-colors">
+              <FaGithub />
+            </a>
+            <a href="https://instagram.com/yourprofile" target="_blank" rel="noopener noreferrer"
+               className="text-maroon text-3xl hover:text-white transition-colors">
+              <FaInstagram />
+            </a>
           </div>
         </div>
       </div>
     </section>
   );
-};
-
-export default Contact;
+}
