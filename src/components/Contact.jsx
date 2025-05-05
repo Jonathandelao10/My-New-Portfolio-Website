@@ -11,7 +11,7 @@ import {
 } from 'react-icons/fa';
 
 export default function Contact() {
-  const sections = ['home','about','skills','education','projects','awards'];
+  const sections = ['home','about','skills','education','experience','projects','awards'];
 
   return (
     <section id="contact" className="bg-stone-900 text-white py-20 px-4">
