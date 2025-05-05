@@ -20,7 +20,7 @@ export default function Navbar() {
     />
         </div>
 
-        <div className="hidden md:flex space-x-10 ">
+        <div className="hidden md:flex space-x-6 ">
           {['home', 'about', 'skills', 'education', 'projects', 'awards','contact'].map(sec => (
             <Link
               key={sec}

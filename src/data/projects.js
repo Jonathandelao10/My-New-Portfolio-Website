@@ -51,6 +51,14 @@ export const projects = [
       },
       {
         id: 8,
+        title: 'EffortLogger Tool',
+        image: 'EffortLogger1.png',
+        tech: ['Java', 'Eclipse', 'JUnit', 'Jira', 'Astah'],
+        description: 'Used agile methodologies to lead a team of 4 individuals for enhancing the EffortLogger tool for a manufacturing firm. Implemented features to adapt to business needs, enhance security, and support large- scale projects. Successfully modernized the tool, meeting customer specifications and improving functionality.',
+        link: 'https://opiniometer.example.com',
+      },
+      {
+        id: 9,
         title: 'Vehicle Software',
         image: 'vehicleSoftware.png',
         tech: ['C++'],
@@ -58,7 +66,7 @@ export const projects = [
         link: 'https://opiniometer.example.com',
       },
       {
-        id: 9,
+        id: 10,
         title: 'Phone Directory',
         image: 'phoneDirectory.png',
         tech: ['C++'],
@@ -66,7 +74,7 @@ export const projects = [
         link: 'https://opiniometer.example.com',
       },
       {
-        id: 10,
+        id: 11,
         title: 'Rapid Recovery',
         image: 'rapidRecovery.png',
         tech: ['JavaScript', 'p5.js', 'Git'],
@@ -74,7 +82,7 @@ export const projects = [
         link: 'https://opiniometer.example.com',
       },
       {
-        id: 11,
+        id: 12,
         title: 'Mario Bros Website',
         image: 'marioBros.png',
         tech: ['HTML', 'CSS', 'javascript'],

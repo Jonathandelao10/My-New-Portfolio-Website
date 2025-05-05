@@ -46,7 +46,7 @@ export default function Awards() {
                         w-132 h-56
                         object-cover
                         rounded-lg
-                        border-4 border-red-800
+                        
                         mb-2
                       "
                     />
