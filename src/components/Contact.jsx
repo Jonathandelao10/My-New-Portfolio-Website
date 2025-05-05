@@ -64,15 +64,15 @@ export default function Contact() {
             Thank you for visiting my personal portfolio website. Feel free to connect with me on socials.
           </p>
           <div className="flex space-x-6 mt-2">
-            <a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noopener noreferrer"
+            <a href="https://www.linkedin.com/in/jonathandelao10/" target="_blank" rel="noopener noreferrer"
                className="text-maroon text-3xl hover:text-white transition-colors">
               <FaLinkedin />
             </a>
-            <a href="https://github.com/yourprofile" target="_blank" rel="noopener noreferrer"
+            <a href="https://github.com/Jonathandelao10" target="_blank" rel="noopener noreferrer"
                className="text-maroon text-3xl hover:text-white transition-colors">
               <FaGithub />
             </a>
-            <a href="https://instagram.com/yourprofile" target="_blank" rel="noopener noreferrer"
+            <a href="https://www.instagram.com/jonathadelao/" target="_blank" rel="noopener noreferrer"
                className="text-maroon text-3xl hover:text-white transition-colors">
               <FaInstagram />
             </a>
