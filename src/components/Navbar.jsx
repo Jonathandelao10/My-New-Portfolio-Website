@@ -8,7 +8,7 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto flex justify-between items-center">
         <div className="flex items-center">
           <img
-        src="/logo1.png"
+        src={`${process.env.PUBLIC_URL}/logo1.png`}
         alt="Logo"
         className="
         h-12                /* keeps the same layout height */

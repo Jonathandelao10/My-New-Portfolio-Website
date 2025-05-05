@@ -42,7 +42,7 @@ export default function Education() {
           >
             {/* Image */}
             <img
-              src={edu.img}
+              src={`${process.env.PUBLIC_URL}${edu.img}`}
               alt={edu.school}
               className="w-full h-48 object-cover"
             />
