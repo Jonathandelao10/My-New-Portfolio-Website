@@ -56,7 +56,7 @@ export default function About() {
           {/* Profile image */}
           <div className="w-full md:w-1/2 mb-8 md:mb-0">
             <img
-              src="/aboutMe.jpg"
+              src="/2.jpg"
               alt="Jonathan De la O"
               className="rounded-full w-80 h-80 mx-auto md:mx-0 object-cover border-4 border-white  "
             />

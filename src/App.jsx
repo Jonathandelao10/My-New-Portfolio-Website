@@ -8,6 +8,7 @@ import Education         from './components/Education';
 import Projects          from './components/Projects';
 import Contact           from './components/Contact';
 import ParticlesComponent from './components/Particles';
+import Awards from './components/Awards';
 
 export default function App() {
   return (
@@ -27,7 +28,9 @@ export default function App() {
         <Skills />
         <Education />
         <Projects />
+        <Awards/>
         <Contact />
+        
       </div>
     </div>
   );
