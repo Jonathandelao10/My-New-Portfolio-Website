@@ -1,4 +1,3 @@
-// src/components/Awards.jsx
 import React from 'react';
 import { awards } from '../data/awards';
 
@@ -25,8 +24,7 @@ export default function Awards() {
       <div className="max-w-6xl mx-auto space-y-8">
         {rows.map((rowAwards, rowIndex) => {
           const className = rowIndex % 2 === 1 ? 'marquee-reverse' : 'marquee';
-          // duplicate for infinite scroll
-          const items = [...rowAwards, ...rowAwards];
+          const items = [...rowAwards, ...rowAwards]; // duplicate for infinite scroll
 
           return (
             <div key={rowIndex} className="marquee-container">
@@ -34,15 +32,7 @@ export default function Awards() {
                 {items.map((award, i) => (
                   <div
                     key={`${rowIndex}-${i}`}
-                    className="
-                      flex-shrink-0
-                      flex flex-col items-center text-center
-                      bg-stone-900    /* dark box background */
-                      text-white      /* white text */
-                      border border-black/20
-                      rounded-lg
-                      p-4
-                    "
+                    className="flex-shrink-0 flex flex-col items-center text-center bg-stone-900 text-white border border-black/20 rounded-lg p-4"
                     style={{ width: '280px' }}
                   >
                     <img
