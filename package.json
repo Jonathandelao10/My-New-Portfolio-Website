@@ -2,7 +2,7 @@
   "name": "my-new-portfolio-website",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://jonathandelao10.github.io/My-New-Portfolio-Website",
+  "homepage": "https://jonathandelao10.github.io/my-new-portfolio-website",
   "dependencies": {
     "@testing-library/dom": "^10.4.0",
     "@testing-library/jest-dom": "^6.6.3",
