@@ -45,7 +45,7 @@ export default function Projects() {
 
             {/* screenshot */}
             <img
-              src={`${process.env.PUBLIC_URL}${p.image}`}
+              src={`${process.env.PUBLIC_URL}/${p.image}`}
               alt={p.title}
               className="w-full h-48 object-cover"
             />
