@@ -2,7 +2,7 @@
 export const awards = [
     { id: 1, img: '/fall2023DeanList.png', title: 'Dean’s List, 2023' },
     { id: 2, img: '/fall2024DeanList.png', title: 'Dean’s List, fall 2024' },
-    { id: 3, img: '/spring2024DeanList.png', title: 'Dean’s List, spring 2024' },
+    { id: 3, img: '/Spring2024DeanList.png', title: 'Dean’s List, spring 2024' },
     { id: 4, img: '/KCACAward.png', title: 'Student-Athlete KCAC Award' },
     { id: 5, img: '/award1.png', title: 'Interactive Programming in Python Certificate' },
     { id: 6, img: '/award2.png', title: 'Applied Data Science Capstone Certificate' },
