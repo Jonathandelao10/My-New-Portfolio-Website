@@ -20,7 +20,7 @@ export const projects = [
     {
       id: 3,
       title: 'My AI Assistant',
-      image: 'AIAssistant.png',
+      image: '/AIAssistant.png',
       tech: ['Python', 'Llama 3.2'],
       description: 'A custom AI assistant built using LLaMA 3.2, optimized through quantization and instruction tuning for accurate, efficient responses.',
       link: 'https://blog.qneksi.com',
@@ -28,7 +28,7 @@ export const projects = [
     {
       id: 5,
       title: 'AI chatbot for Financial Services',
-      image: 'financialAIAssistant.png',
+      image: '/financialAIAssistant.png',
       tech: ['React', 'Javascript', 'CSS', 'Gemini', 'Firebase'],
       description: 'An AI chatbot, designed to guide seniors through complex financial aid applications, improving accessibility through natural conversation.',
       link: 'https://opiniometer.example.com',
@@ -36,7 +36,7 @@ export const projects = [
     {
         id: 6,
         title: 'Wine Quality prediction with ML models',
-        image: 'wineQualityPrediction.jpg',
+        image: '/wineQualityPrediction.jpg',
         tech: [ 'Python', 'Scikit-learn', 'NumPy', 'Jupyter Notebook'],
         description: 'Machine learning model that predicts the quality of wine using different machine learning algorithms such as K-means clustering and decision tree classification.',
         link: 'https://opiniometer.example.com',
@@ -44,7 +44,7 @@ export const projects = [
       {
         id: 7,
         title: 'Real Estate Price Predictor',
-        image: 'realEstatePredictor.png',
+        image: '/realEstatePredictor.png',
         tech: ['Python', 'Scikit-learn', 'Matplotlib', 'Jupyter Notebook'],
         description: 'Machine learning model that predicts real estate prices.',
         link: 'https://opiniometer.example.com',
@@ -52,7 +52,7 @@ export const projects = [
       {
         id: 8,
         title: 'EffortLogger Tool',
-        image: 'EffortLogger1.png',
+        image: '/EffortLogger1.png',
         tech: ['Java', 'Eclipse', 'JUnit', 'Jira', 'Astah'],
         description: 'Used agile methodologies to lead a team of 4 individuals for enhancing the EffortLogger tool for a manufacturing firm. Implemented features to adapt to business needs, enhance security, and support large- scale projects. Successfully modernized the tool, meeting customer specifications and improving functionality.',
         link: 'https://opiniometer.example.com',
@@ -60,7 +60,7 @@ export const projects = [
       {
         id: 9,
         title: 'Vehicle Software',
-        image: 'vehicleSoftware.png',
+        image: '/vehicleSoftware.png',
         tech: ['C++'],
         description: 'Program to simulate the operation of vehicles to compare the performance of traditional, electric and hybrid automobiles. Gives you the best option copmaring the performance of each of the vehicles.',
         link: 'https://opiniometer.example.com',
@@ -68,7 +68,7 @@ export const projects = [
       {
         id: 10,
         title: 'Phone Directory',
-        image: 'phoneDirectory.png',
+        image: '/phoneDirectory.png',
         tech: ['C++'],
         description: 'Phone directory that allows the user to create, show, insert, remove, store and find contacts in it. All this functions through the use of data structures.',
         link: 'https://opiniometer.example.com',
@@ -76,7 +76,7 @@ export const projects = [
       {
         id: 11,
         title: 'Rapid Recovery',
-        image: 'rapidRecovery.png',
+        image: '/rapidRecovery.png',
         tech: ['JavaScript', 'p5.js', 'Git'],
         description: 'Web application to assist in the recovery of Stroke Patients. The game helps in the development of the Fine Motor Skills(FMS) deactivated in the patients suffering from Stroke.',
         link: 'https://opiniometer.example.com',
@@ -84,7 +84,7 @@ export const projects = [
       {
         id: 12,
         title: 'Mario Bros Website',
-        image: 'marioBros.png',
+        image: '/marioBros.png',
         tech: ['HTML', 'CSS', 'javascript'],
         description: 'Website based on the classic game "Mario Bros" using HTML, CSS and Javascript, which is compatible with Laptops, desktops and other devices.',
         link: 'https://opiniometer.example.com',

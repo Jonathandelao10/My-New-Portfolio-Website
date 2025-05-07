@@ -46,7 +46,7 @@ export default function Awards() {
                     style={{ width: '280px' }}
                   >
                     <img
-                      src={`${process.env.PUBLIC_URL}/${award.img}`}
+                      src={`${process.env.PUBLIC_URL}${award.img}`}
                       alt={award.title}
                       className="w-full h-48 object-cover rounded-md mb-2"
                     />
