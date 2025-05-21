@@ -4,7 +4,7 @@ import React, { useState, useEffect } from 'react';
 
 // List of titles to cycle through
 const roles = [
-  'Computer Science Student',
+  'Computer Scientist',
   'Software Developer',
   'Data Scientist',
   'Machine Learning Engineer',

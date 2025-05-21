@@ -29,7 +29,9 @@ export default function Projects() {
               hover:-translate-y-1 hover:shadow-2xl
             "
           >
+            
             {/* external link icon */}
+            {/*
             <a
               href={p.link}
               target="_blank"
@@ -43,6 +45,8 @@ export default function Projects() {
               <FiExternalLink size={20} />
             </a>
 
+            */}
+          
             {/* screenshot */}
             <img
               src={`${process.env.PUBLIC_URL}${p.image}`}

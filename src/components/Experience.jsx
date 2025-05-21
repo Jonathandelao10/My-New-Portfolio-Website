@@ -5,14 +5,14 @@ import { FaBriefcase } from 'react-icons/fa';
 // Your experience entries
 const experienceData = [
   {
-    title: 'Arizona State University',
-    subtitle: 'Asset Specialist',
-    dates: 'Sep 2022 – Present',
-  },
-  {
     title: 'Beam Group',
     subtitle: 'Software Developer',
     dates: 'Aug 2024 – May 2025',
+  },
+  {
+    title: 'Arizona State University',
+    subtitle: 'Asset Specialist',
+    dates: 'Sep 2022 – May 2025',
   },
   {
     title: 'CAI3P0',

@@ -22,7 +22,7 @@ export default function Awards() {
       </div>
 
       {/* Three marquee rows */}
-      <div className="max-w-6xl mx-auto space-y-8">
+      <div className="w-full space-y-8 px-2 md:px-0">
         {rows.map((rowAwards, rowIndex) => {
           const className = rowIndex % 2 === 1 ? 'marquee-reverse' : 'marquee';
           // duplicate for infinite scroll
