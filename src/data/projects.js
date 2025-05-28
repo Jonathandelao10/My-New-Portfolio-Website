@@ -89,6 +89,14 @@ export const projects = [
         description: 'Website based on the classic game "Mario Bros" using HTML, CSS and Javascript, which is compatible with Laptops, desktops and other devices.',
         link: 'https://opiniometer.example.com',
       },
+      {
+        id: 13,
+        title: 'eCommerce Application',
+        image: '/EcommerceApp.png',
+        tech: ['PostgreSQL', 'Javascript','CSS','HTML', 'React'],
+        description: 'Designed and developed a full-stack e-commerce platform to showcase advanced database management skills. The backend was powered by PostgreSQL, focusing on efficient schema design, relational integrity, and query optimization. The frontend, built with React, HTML, CSS, and JavaScript. The project demonstrated proficiency in building scalable CRUD operations, managing user sessions, and integrating frontend components with a robust SQL backend.',
+        link: 'https://opiniometer.example.com',
+      },
       
     // …and so on up to id:9
   ];

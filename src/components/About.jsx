@@ -75,15 +75,15 @@ export default function About() {
             </h3>
 
             <p className="text-lg mb-6">
-            I'm a Computer Science senior at Arizona State University with a strong interest in Machine Learning, AI, and Data Science.
-             With experience in AI development, data analysis, and project management, I’ve contributed to real-world projects at NASA, CAI3p0, and ASU.
+            I'm a Computer Science professional with a strong interest in Machine Learning, AI, and Data Science.
+             With experience in AI development, data analysis, and project management, I’ve contributed to real-world projects at NASA, CAI3p0, Beam Group and ASU.
              I enjoy building intelligent systems that solve meaningful problems and improve user experience.
               Whether leading teams or diving into technical challenges, I bring curiosity, precision, and a drive to make an impact.
             </p>
 
             {/* Resume button with hover scale & shadow */}
             <a
-              href="https://drive.google.com/file/d/1SPQTAw4H9bxOt6vRj1wHb9iImWIbYDiI/view?usp=sharing"
+              href="https://drive.google.com/file/d/1vLR3xcdZnaja7cEIkawdv_lRNlsAs53Y/view?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
               className="
